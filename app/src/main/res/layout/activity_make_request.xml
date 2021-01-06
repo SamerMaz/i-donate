@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MakeRequest">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="100dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Write all the Details like:
+            \n-Name \n-Hospital Name \n-Blood Type \n-specific case"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="20dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_background"
+            android:layout_margin="8dp">
+
+            <EditText
+                android:id="@+id/messageText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:gravity="top"
+                android:hint="Details of patient..."
+                android:maxLines="10"
+                android:minLines="6"
+                android:padding="15dp"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_background"
+            android:layout_margin="8dp">
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:hint="Phone number"
+                android:inputType="phone"
+                android:maxLength="8"
+                android:id="@+id/phone"
+                android:background="@null"
+                android:padding="10dp"
+                />
+
+        </FrameLayout>
+
+
+
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Post Request"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="50dp"
+            android:id="@+id/btnSubmit"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_gravity="center"/>
+
+<!--        <Button-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:id="@+id/test"-->
+<!--            android:text="test"/>-->
+
+
+    </LinearLayout>
+
+</ScrollView>
