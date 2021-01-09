@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Write all the Details like:
-            \n-Name \n-Hospital Name \n-Blood Type \n-specific case"
+            \n-Name \n-Hospital Name \n-Blood Type \n-patient's case(optional)"
             android:textColor="@android:color/black"
             android:textSize="24sp"
             android:textStyle="bold"
