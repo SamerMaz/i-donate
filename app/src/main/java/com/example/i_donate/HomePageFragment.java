@@ -60,7 +60,7 @@ public class HomePageFragment extends Fragment {
     }
 
     private void setUpRecyclerView() {
-        Query query = patient_ref.orderBy("details", Query.Direction.DESCENDING);
+        Query query = patient_ref.orderBy("details", Query.Direction.ASCENDING);
 
         FirestoreRecyclerOptions<RequestDataModel> options = new FirestoreRecyclerOptions.Builder<RequestDataModel>()
                 .setQuery(query, RequestDataModel.class)

@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
 
                 if (password.length()<6){
-                    edtTxtPass.setError("Password must be >= 6 Characters");
+                    edtTxtPass.setError("Password must be ≥ 6 Characters");
                     return;
                 }
 
